@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<label>XPlayer name : </label> 
+<input type="text" id="Xplayer"> </input>
+<label>OPlayer name: </label> 
+<input type="text" id="Oplayer"> </input>
+<br>
+<label id ="winnerLabel" >The sign of first player is X</label>
+</br>
+
+<button id="start">Start</button>
+<button id="reset" >Reset</button>
+
+<div class="grid-container">
+   <table> 
+    <tr>
+     <td><div id="0" class="grid-item"></td>  
+     <td><div id = "1" class="grid-item"> </div></td>
+     <td><div id = "2" class="grid-item"> </div></td>
+     </tr>
+     <tr>
+     <td><div id="3" class="grid-item"> </div></td>
+     <td><div id = "4" class="grid-item"> </div></td>
+     <td><div id = "5" class="grid-item"> </div></td>
+    </tr>
+    <tr>
+     <td><div id = "6" class="grid-item"> </div></td>
+     <td><div id = "7" class="grid-item"> </div></td>
+     <td><div id = "8"class="grid-item"> </div></td>
+     <tr>
+</table>
+  </div>
+</html>
+
+<style>
+    .grid-container{
+        text-align: center;
+        display: grid;
+        padding: 10px;
+        border-radius: 10px;
+        visibility: hidden;
+    }
+    .grid-item {
+        cursor: pointer;
+        border: 2px solid #3e2723;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+}
+#winnerLabel{
+  text-align: center;
+}
+</style>
+
+<script src = "TicTacToe.js"></script>
